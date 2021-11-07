@@ -1,0 +1,21 @@
+body{
+   background-color: rgb(43, 122, 43);
+
+}
+
+.addCardMovieList {
+  background-color: rgb(230, 181, 122);
+  border-radius: 5px;
+  color: rgb(69, 114, 99);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.buttonCountainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}

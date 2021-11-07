@@ -1,0 +1,22 @@
+.cardDetails {
+  padding: 15px;
+  color: antiquewhite;
+}
+
+.imgDetails {
+  width: 330px;
+}
+
+.linksDetails {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.linkDecoration{
+  background-color: rgb(39, 103, 199);
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 10px 20px;
+  text-decoration: none ;
+}

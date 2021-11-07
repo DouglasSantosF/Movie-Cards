@@ -1,0 +1,16 @@
+.cardCountainer {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 0 0 8px 8px;
+  background-color: rgb(67, 67, 207);
+  color: beige;
+}
+
+.imageCard {
+  width: 330px;
+}
+
+.linkDetails {
+  text-decoration: none;
+  color: rgb(20, 175, 175);
+}

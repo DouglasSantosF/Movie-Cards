@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as movieAPI from '../services/movieAPI';
 import { Loading } from '../components';
+import '../css/MovieDetails.css';
 
 class MovieDetails extends Component {
   constructor(props) {
@@ -36,22 +37,26 @@ class MovieDetails extends Component {
     const { id, title, storyline, imagePath, genre, rating, subtitle } = movies;
     const carregando = <Loading />;
 
-    return (
-      <div data-testid="movie-details">
-        {loading ? carregando : null }
-        <img alt="Movie Cover" src={ `../${imagePath}` } />
+    return (loading ? carregando : (
+      <div data-testid="movie-details" className="cardDetails">
+        <img className="imgDetails" alt="Movie Cover" src={ `../${imagePath}` } />
         <p>{ `Título: ${title}` }</p>
         <p>{ `Subtítulo: ${subtitle}` }</p>
         <p>{ `Sinopse: ${storyline}` }</p>
         <p>{ `Gênero: ${genre}` }</p>
         <p>{ `Avaliação: ${rating}` }</p>
-        <div>
-          <Link to="/">VOLTAR</Link>
-          <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
-          <Link to="/" onClick={ () => this.deletarFilmes(id) }>DELETAR</Link>
+        <div className="linksDetails">
+          <Link className="linkDecoration" to="/">VOLTAR</Link>
+          <Link className="linkDecoration" to={ `/movies/${id}/edit` }>EDITAR</Link>
+          <Link
+            className="linkDecoration"
+            to="/"
+            onClick={ () => this.deletarFilmes(id) }
+          >
+            DELETAR
+          </Link>
         </div>
-
-      </div>
+      </div>)
     );
   }
 }

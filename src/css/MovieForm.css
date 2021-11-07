@@ -1,0 +1,38 @@
+.formCountainer {
+  background-color: rgb(42, 110, 42);
+  color: antiquewhite;
+  padding: 30px;
+}
+
+.formCountainer input {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.formCountainer select {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.formCountainer textarea {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 50px;
+}
+
+.formCountainer button {
+  background-color: rgb(155, 211, 211);
+  border-radius: 8px;
+  border-style: none;
+  color: rgb(58, 58, 114);
+  height: 25px;
+  width: 80px;
+
+}
+
+.titlePage {
+  display: flex;
+  justify-content: center;
+  color: rgb(155, 211, 211);
+}
