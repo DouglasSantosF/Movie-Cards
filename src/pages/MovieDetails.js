@@ -39,14 +39,14 @@ class MovieDetails extends Component {
 
     return (loading ? carregando : (
       <div className="countainerDetails">
-        <div data-testid="movie-details" className="cardDetails">
+        <ul data-testid="movie-details" className="cardDetails">
           <img className="imgDetails" alt="Movie Cover" src={ `../${imagePath}` } />
           <p>{ `Título: ${title}` }</p>
           <p>{ `Subtítulo: ${subtitle}` }</p>
-          <p>{ `Sinopse: ${storyline}` }</p>
+          <p className="storyLine">{ `Sinopse: ${storyline}` }</p>
           <p>{ `Gênero: ${genre}` }</p>
           <p>{ `Avaliação: ${rating}` }</p>
-        </div>
+        </ul>
         <div className="linkcountainer">
           <div className="linksDetails">
             <Link className="linkDecoration" to="/">VOLTAR</Link>

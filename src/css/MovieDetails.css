@@ -1,18 +1,12 @@
 .cardDetails {
   padding: 10px;
   color: antiquewhite;
-  width: 80%;
   border: 2px solid yellow;
   border-radius: 5px;
   background-color: rgb(36, 36, 71);
 }
 
-.imgDetails {
-  width: 90%;
-}
-
 .linksDetails {
-  
   height: 35px;
   display: flex;
   justify-content: space-around;
@@ -27,6 +21,11 @@
   text-decoration: none ;
 }
 
+.linkDecoration:hover {
+  color: yellow;
+  transition: 1s;
+}
+
 .linkcountainer {
   display: flex;
   justify-content:space-evenly;
@@ -39,5 +38,37 @@
   flex-direction: column;
   justify-content:space-around;
   align-items: center;
-  height: 100vh;
+}
+
+@media screen and (max-width: 600px) { 
+  .countainerDetails {
+    height: 100vh;
+  }
+
+  .cardDetails {
+    width: 80%;
+  }
+
+  .imgDetails {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .storyLine{
+    width: 600px; 
+  }
+
+  .countainerDetails {
+    height: 100vh;
+  }
+
+  .cardDetails p, img{
+    margin-left: 80px;
+  }
+
+  .imgDetails {
+    width: 300px;
+  }
+
 }

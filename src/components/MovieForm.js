@@ -81,7 +81,7 @@ class MovieForm extends React.Component {
 
     return (
       <div>
-        <label htmlFor="movie_storyline">
+        <label className="sinopse" htmlFor="movie_storyline">
           Sinopse
           <textarea
             id="movie_storyline"

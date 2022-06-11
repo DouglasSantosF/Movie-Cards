@@ -40,6 +40,7 @@ class MovieList extends Component {
             <Link className="addCardMovieList" to="/movies/new">ADICIONAR CARTÃO</Link>
           </div>
         </div>
+
     );
   }
 }

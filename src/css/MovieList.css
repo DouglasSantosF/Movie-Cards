@@ -1,10 +1,10 @@
 body{
-   background-color: rgb(38, 71, 80);
-
+  background-color: rgb(38, 71, 80);
 }
 
+
 .addCardMovieList {
-  background-color: rgb(24, 46, 75);
+  background-color: rgb(218, 227, 240);
   border-radius: 5px;
   color: rgb(69, 114, 99);
   display: flex;
@@ -14,8 +14,29 @@ body{
   width: 200px;
 }
 
+.addCardMovieList:hover {
+  background-color: rgb(13, 35, 65);
+  color: yellow;
+  transition: 1.3s;
+}
+
 .buttonCountainer {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
+
+/* Regra de estilo para telas menores que 600px */
+@media screen and (max-width: 600px) {
+  
+}
+
+/* Regra de estilo para telas maiores que 600px */
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

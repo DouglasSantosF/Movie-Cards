@@ -5,6 +5,10 @@
  
 }
 
+.sinopse {
+  display: flex;
+}
+
 .formCountainer input {
   margin-left: 20px;
   margin-bottom: 10px;
@@ -38,4 +42,37 @@
   align-items: center;
   margin: 8%;
   color: rgb(155, 211, 211);
+}
+
+@media screen and (min-width: 600px) {
+  .formCountainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+    align-content: space-between;
+    
+  }
+
+  .formCountainer input {
+    margin-top: 30px;
+  }
+
+  .formCountainer label:hover {
+    color: rgb(219, 137, 14);
+    transition: 0.5s;
+  }
+
+  .formCountainer button {
+    margin-top: 10px;
+  }
+  
+  .formCountainer button:hover {
+    background-color: rgb(37, 109, 151);
+    color: antiquewhite;
+    transition: 1s;
+    transition: 1s ;
+  }
 }

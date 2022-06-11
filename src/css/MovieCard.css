@@ -1,4 +1,6 @@
 .cardCountainer {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 0 0 8px 8px;
@@ -6,12 +8,38 @@
   color: beige;
 }
 
-.imageCard {
-  width: 330px;
-}
 
 .linkDetails {
   border-radius: 1px solid wheat;
   text-decoration: none;
   color: rgb(20, 175, 175);
+  background-color: rgb(18, 55, 122);
+  width: 120px;
+  margin-top: 8px;
+
+}
+
+/* Regra de estilo para telas menores que 600px */
+@media screen and (max-width: 600px) {
+  .imageCard {
+    width: 250px;
+  }
+
+  
+}
+
+/* Regra de estilo para telas maiores que 600px */
+@media screen and (min-width: 600px) {
+  
+  .cardCountainer p {
+    width: 800px;
+  }
+  
+  .imageCard {
+    width: 400px;
+  }
+
+  .linkDetails {
+    padding: 4px;
+  }
 }
