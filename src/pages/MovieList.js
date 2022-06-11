@@ -33,12 +33,13 @@ class MovieList extends Component {
     const arrayMovies = movies
       .map((movie) => <MovieCard key={ movie.title } movie={ movie } />);
     return (
-      <div data-testid="movie-list" className="countainerHome">
-        { loading ? carregamento : arrayMovies }
-        <div className="buttonCountainer">
-          <Link className="addCardMovieList" to="/movies/new">ADICIONAR CARTÃO</Link>
+      loading ? carregamento
+        : <div data-testid="movie-list" className="countainerHome">
+          {arrayMovies}
+          <div className="buttonCountainer">
+            <Link className="addCardMovieList" to="/movies/new">ADICIONAR CARTÃO</Link>
+          </div>
         </div>
-      </div>
     );
   }
 }

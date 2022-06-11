@@ -2,7 +2,7 @@
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 0 0 8px 8px;
-  background-color: rgb(67, 67, 207);
+  background-color: rgb(41, 41, 80);
   color: beige;
 }
 
@@ -11,6 +11,7 @@
 }
 
 .linkDetails {
+  border-radius: 1px solid wheat;
   text-decoration: none;
   color: rgb(20, 175, 175);
 }

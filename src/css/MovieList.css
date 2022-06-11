@@ -1,10 +1,10 @@
 body{
-   background-color: rgb(43, 122, 43);
+   background-color: rgb(38, 71, 80);
 
 }
 
 .addCardMovieList {
-  background-color: rgb(230, 181, 122);
+  background-color: rgb(24, 46, 75);
   border-radius: 5px;
   color: rgb(69, 114, 99);
   display: flex;

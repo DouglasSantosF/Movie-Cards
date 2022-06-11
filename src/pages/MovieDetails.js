@@ -38,25 +38,30 @@ class MovieDetails extends Component {
     const carregando = <Loading />;
 
     return (loading ? carregando : (
-      <div data-testid="movie-details" className="cardDetails">
-        <img className="imgDetails" alt="Movie Cover" src={ `../${imagePath}` } />
-        <p>{ `Título: ${title}` }</p>
-        <p>{ `Subtítulo: ${subtitle}` }</p>
-        <p>{ `Sinopse: ${storyline}` }</p>
-        <p>{ `Gênero: ${genre}` }</p>
-        <p>{ `Avaliação: ${rating}` }</p>
-        <div className="linksDetails">
-          <Link className="linkDecoration" to="/">VOLTAR</Link>
-          <Link className="linkDecoration" to={ `/movies/${id}/edit` }>EDITAR</Link>
-          <Link
-            className="linkDecoration"
-            to="/"
-            onClick={ () => this.deletarFilmes(id) }
-          >
-            DELETAR
-          </Link>
+      <div className="countainerDetails">
+        <div data-testid="movie-details" className="cardDetails">
+          <img className="imgDetails" alt="Movie Cover" src={ `../${imagePath}` } />
+          <p>{ `Título: ${title}` }</p>
+          <p>{ `Subtítulo: ${subtitle}` }</p>
+          <p>{ `Sinopse: ${storyline}` }</p>
+          <p>{ `Gênero: ${genre}` }</p>
+          <p>{ `Avaliação: ${rating}` }</p>
         </div>
-      </div>)
+        <div className="linkcountainer">
+          <div className="linksDetails">
+            <Link className="linkDecoration" to="/">VOLTAR</Link>
+            <Link className="linkDecoration" to={ `/movies/${id}/edit` }>EDITAR</Link>
+            <Link
+              className="linkDecoration"
+              to="/"
+              onClick={ () => this.deletarFilmes(id) }
+            >
+              DELETAR
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
     );
   }
 }
