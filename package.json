@@ -12,7 +12,7 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.2.0",
     "serialize-javascript": "3.1.0",
-    "homepage": "https://douglassantosf.github.io/moviecards/"
+    "homepage": "http://douglassantosf.github.io/moviecards"
   },
   "scripts": {
     "start": "react-scripts start",
