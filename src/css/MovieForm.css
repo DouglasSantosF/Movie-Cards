@@ -33,7 +33,17 @@
   color: rgb(58, 58, 114);
   height: 25px;
   width: 80px;
+}
 
+.buttonBack {
+  text-decoration: none;
+  background-color: rgb(155, 211, 211);
+  color: rgb(58, 58, 114);
+  border-radius: 8px;
+  height: 20px;
+  width: 50px;
+  padding: 10px;
+  
 }
 
 .titlePage {
@@ -42,6 +52,18 @@
   align-items: center;
   margin: 8%;
   color: rgb(155, 211, 211);
+}
+
+@media screen and (max-width: 600px) {
+  .buttonBack {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .formCountainer {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -65,11 +87,18 @@
     transition: 0.5s;
   }
 
-  .formCountainer button {
+  .formCountainer button, .buttonBack {
     margin-top: 10px;
   }
   
   .formCountainer button:hover {
+    background-color: rgb(37, 109, 151);
+    color: antiquewhite;
+    transition: 1s;
+    transition: 1s ;
+  }
+
+  .buttonBack:hover {
     background-color: rgb(37, 109, 151);
     color: antiquewhite;
     transition: 1s;

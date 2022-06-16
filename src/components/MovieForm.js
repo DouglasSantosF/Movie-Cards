@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../css/MovieForm.css';
 
@@ -160,6 +161,7 @@ class MovieForm extends React.Component {
           {this.renderGenreSelection()}
           {this.renderRatingInput()}
           {this.renderSubmitButton()}
+          <Link className="buttonBack" to="/">Voltar</Link>
         </form>
       </div>
     );
