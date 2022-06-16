@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 10px;
   margin-bottom: 20px;
-  border-radius: 0 0 8px 8px;
+  border-radius:  8px 8px;
   background-color: rgb(41, 41, 80);
   color: beige;
 }
@@ -19,6 +19,9 @@
 
 }
 
+.linkDetails:hover {
+  opacity: 0.8;
+}
 /* Regra de estilo para telas menores que 600px */
 @media screen and (max-width: 600px) {
   .imageCard {
@@ -41,5 +44,8 @@
 
   .linkDetails {
     padding: 4px;
+    margin-left: 80px;
   }
+
+
 }
