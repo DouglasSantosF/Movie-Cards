@@ -58,4 +58,5 @@ Caso queira clonar para rodar localmente, após dar o gitclone em sua máquina, 
 ---
 <br>
 
+https://vercel-movie-card.vercel.app/
 
