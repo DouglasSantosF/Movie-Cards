@@ -1,5 +1,5 @@
 
-# Movie card library crud
+# Movie Card
 
 #### Este foi um projeto na **Trybe** em que testamos nossos conhecimentos ao acessar uma base de dados e utilizar os itens da base de dados para montar cards na tela para o usuário ver, também foi testado as manipulações entre componentes do React, a criação e manipulação do forms e seus inputs, além da estilização dos componentes. Ele tem como objetivo mostrar meus conhecimentos em **React**, **Javascript**, **manipulação de componentes**, **CSS**. 
 
